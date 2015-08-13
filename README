@@ -1,0 +1,20 @@
+A simple plane cut method for finding a maximum weight independent set. It reads
+input files in the DIMACS text format. I.e., they look like this:
+
+c Comment
+p edge [num_vertices] [num_edges]
+e [v] [u]
+....
+n [v] [w_v]
+
+For example, the following describes a triangle graph with vertex weights 10, 20
+and 30.
+
+c This is a triangle graph
+p edge 3 3
+e 1 2
+e 2 3
+e 3 1
+n 1 10
+n 2 20
+n 3 30
